@@ -1,10 +1,10 @@
 package clases;
 
 public class Mensajes {
-    final String msgIngresosMensuales = "Ingrese sus ingresos mensuales";
-    final String msgGastosFijos = "Ingrese sus gastos fijos";
-    final String msgGastosVariables = "Ingrese sus gastos variables";
-    final String msgErrorDatos = "Error con la información ingresada, intente de nuevo";
+    static final String msgIngresosMensuales = "Ingrese sus ingresos mensuales";
+    static final String msgGastosFijos = "Ingrese sus gastos fijos";
+    static final String msgGastosVariables = "Ingrese sus gastos variables";
+    static final String msgErrorDatos = "Error con la información ingresada, intente de nuevo";
 
     public String getMsgIngresosMensuales() {
         return msgIngresosMensuales;
