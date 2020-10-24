@@ -63,7 +63,7 @@ public class Main {
             }
 
         }
-        System.out.println("Ejecución terminada");
+
     }
 
     public static boolean isNumeric(String value) {
