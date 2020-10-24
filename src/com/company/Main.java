@@ -2,15 +2,13 @@ package com.company;
 
 import clases.CapacidadEndedudamiento;
 import clases.Mensajes;
-import javafx.scene.input.KeyCode;
 
 import java.util.Scanner;
 
 public class Main {
-    //Recuerda que aca empieza todo
+
     public static void main(String[] args) {
-        //Con este objeto de la clase Scanner puedes capturar informacion por consola cada ves que lo uses
-        // recuerda cerrar el flujo de consulta cada ves lo uses sobre para que los uses in.close()
+
         Scanner in = new Scanner(System.in);
         Mensajes msg = new Mensajes();
         CapacidadEndedudamiento endedudamiento = new CapacidadEndedudamiento();
@@ -56,7 +54,7 @@ public class Main {
                 }
             }
 
-            //Se valida si no hubo error con los datos de entrada
+            //Se valida si no hubo error con los datos de entrada de lo contrario se muestra error
             if (paso1 && paso2 && paso3) {
                 System.out.println(endedudamiento.getCapacidadEndeudamiento());
                 entrada = "NO";
@@ -65,11 +63,13 @@ public class Main {
             }
 
         }
+        System.out.println("Ejecución terminada");
     }
 
     public static boolean isNumeric(String value) {
         boolean numeric;
-        // implementa un bloque try catch aca
+
+        //Se verifica si el valor ingresado es numérico o no (se retorna true o false)
         try {
             Double.parseDouble(value);
             numeric = true;
